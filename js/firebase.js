@@ -2,19 +2,12 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.1/firebase
 import { getFirestore, collection, getDocs, addDoc} from "https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore.js";
 
 const firebaseConfig = {
-
     apiKey: "AIzaSyAC_0ALth7Sa49p4WVQ47HWlDXCZ6Xez7A",
-
     authDomain: "hsc-21-chemistry-revision.firebaseapp.com",
-
     projectId: "hsc-21-chemistry-revision",
-
     storageBucket: "hsc-21-chemistry-revision.appspot.com",
-
     messagingSenderId: "978986359125",
-
     appId: "1:978986359125:web:67b8742e458eef841537dc"
-
 };
 
 

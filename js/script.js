@@ -11,14 +11,6 @@ $(document).ready(function () {
         $('.login-form').removeClass('popup');
     });
 
-    // $('.submit-form').click(function () {
-    //     $('.modal-wrap').removeClass('display-none');
-    // });
-
-    // $('.modal-close').click(function () {
-    //     $('.modal-wrap').addClass('display-none');
-    // });
-
     $(window).on('load scroll', function () {
         $('#burger').removeClass('fa-times');
         $('.navbar').removeClass('nav-toggle');
