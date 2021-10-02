@@ -515,7 +515,9 @@ header #burger {
     /* background-color: #666; */
     justify-content: center;
     align-items: center;
-    margin: 130px;
+    width: 100%;
+    margin-top: 130px;
+    margin-bottom: 130px;
 }
 
 .revision-main-app .revision-card {
@@ -529,18 +531,21 @@ header #burger {
     text-align: center;
     padding: 2rem 0;
     border-radius: 1rem;
-    height: 400px;
+    /* height: 400px; */
     line-height: 3rem;
+    text-transform: none;
 }
 
 .revision-main-app .revision-card h1 {
     color: #f39c12;
     font-size: 5rem;
+    text-transform: none;
 }
 
 .revision-main-app .revision-card p {
     /* font-size: 2rem; */
     color: #222;
+    text-transform: none;
 }
 
 .revision-main-app .revision-card .chapter-name {
