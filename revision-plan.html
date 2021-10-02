@@ -20,7 +20,6 @@
 <body class="revision-body">
     <!-- navigation bar -->
     <header>
-
         <div id="burger" class="fas fa-bars"></div>
         <a href="#" class="logo"><i class="fas fa-prescription-bottle"></i>HSC'21 Chemistry Revision Program</a>
         <nav class="navbar">
@@ -34,6 +33,16 @@
         <!-- <div id="login" class="fas fa-user-circle"></div> -->
     </header>
 
+    <!-- exam popup modal  -->
+
+    <div class="exam-modal modal-wrap display-none">
+        <div class="modal">
+            <i class="fas fa-times exam-modal-close"></i>
+            <p>Select Exam</p>
+            <button class="btn"><a href="https://testmoz.com/10294798" target="blank">MCQ Exam</a></button>
+            <button class="btn"><a href="https://testmoz.com/10294852" target="blank">CQ Exam</a></button>
+        </div>
+    </div>
     <!-- revision plan section -->
     <section class="revision-main-app">
         <div class="revision-card">
@@ -44,14 +53,14 @@
 
             <h1 class="exam-title">Exam time</h1>
 
-            <p class="exam-time">  October 6th, 10:00:00 am
-                    <br> to <br>
-                    October 6th, 10:00:00 pm
+            <p class="exam-time"> October 6th, 10:00:00 am
+                <br> to <br>
+                October 6th, 10:00:00 pm
             </p>
 
             <div class="revision-button-links">
                 <button class="btn"><a href="#">Chapter Note</a></button>
-                <button class="btn"><a href="#">Start Exam</a></button>
+                <button class="btn start-exam-modal"><a href="#">Start Exam</a></button>
                 <button class="btn"><a href="#">Solve Sheet</a></button>
             </div>
         </div>

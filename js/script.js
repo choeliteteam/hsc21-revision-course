@@ -11,6 +11,14 @@ $(document).ready(function () {
         $('.login-form').removeClass('popup');
     });
 
+    $('.start-exam-modal').click(function () {
+        $('.exam-modal').removeClass('display-none');
+    });
+
+    $('.exam-modal .modal .fa-times').click(function () {
+        $('.exam-modal').addClass('display-none');
+    });
+
     $(window).on('load scroll', function () {
         $('#burger').removeClass('fa-times');
         $('.navbar').removeClass('nav-toggle');

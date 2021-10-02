@@ -167,6 +167,22 @@ header #burger {
     margin-bottom: 1rem;
 }
 
+.modal-wrap .modal .btn{
+    margin: 0 1rem;
+    margin-top:2rem; 
+    font-size: 1.7rem;
+}
+.modal-wrap .modal .fa-times{
+    position: relative;
+    top: 55%;
+    right: -40%;
+    font-size: 3rem;
+    color: #999;
+    cursor: pointer;
+}
+.modal-wrap .modal .btn a{
+    color: #fff;
+}
 /* login form  */
 
 .login-form {
