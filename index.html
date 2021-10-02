@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 
+    <script type="module" src="js/firebase.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -33,6 +34,15 @@
         <div id="login" class="fas fa-user-circle"></div>
     </header>
 
+    <!-- contact modal -->
+    <div class="modal-wrap display-none">
+        <div class="modal">
+            <img src="images/Appreciation-rafiki.png" alt="">
+            <p>Thank you for your submission</p>
+            <p>We will be back in touch in 24-48 hours.</p>
+            <button class="btn modal-close">Close</button>
+        </div>
+    </div>
     <!-- landing page -->
     <section class="home" id="home">
         <div class="content">
@@ -64,21 +74,23 @@
         </div>
 
     </section>
-    
+
+
     <!-- contact   -->
     <h1 class="heading">Feel free to ask and clear your doubts</h1>
     <section class="contact" id="contact">
         <div class="image">
             <img src="images/Mention-cuate.png" alt="">
-        </div> 
+        </div>
 
-        <form action="">
+        <form action="" class="contact-form">
             <div class="input-box">
-                <input type="text" placeholder="name">
-                <input type="tel" placeholder="phone number">
+                <input class="name" type="text" placeholder="Name" required>
+                <input class="email" type="email" placeholder="Email" required>
             </div>
-            <textarea placeholder="question" name="" id="" cols="30" rows="10"></textarea>
-            <input type="submit" class="btn" value="send">
+            <input class="tel" type="tel" placeholder="Phone Number" required>
+            <textarea class="message" placeholder="Question" cols="30" rows="10" required></textarea>
+            <button type="submit" class="btn submit-form">Send</button>
         </form>
     </section>
 
@@ -122,9 +134,13 @@
 
         <div class="credit">created by <span>CHO ELITE TEAM</span>| all rights reserved</div>
     </section>
+
+
     <!-- script links -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/script.js"></script>
+
+
 </body>
 
 </html>
