@@ -8,11 +8,9 @@ const firebaseConfig = {
     storageBucket: "hsc-21-chemistry-revision.appspot.com",
     messagingSenderId: "978986359125",
     appId: "1:978986359125:web:67b8742e458eef841537dc"
-};
-
+  };
 
 // Initialize Firebase
-
 const app = initializeApp(firebaseConfig);
 const db = getFirestore();
 
