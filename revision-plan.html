@@ -17,7 +17,8 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="revision-body">
+
+<body >
     <!-- navigation bar -->
     <header>
         <div id="burger" class="fas fa-bars"></div>
@@ -33,40 +34,60 @@
         </nav>
         <!-- <div id="login" class="fas fa-user-circle"></div> -->
     </header>
+    <!-- ------------------------------------------------- -->
+    <!-- Plan table  -->
 
-    <!-- exam popup modal  -->
-
-    <div class="exam-modal modal-wrap display-none">
-        <div class="modal">
-            <i class="fas fa-times exam-modal-close"></i>
-            <p>Select Exam</p>
-            <button class="btn"><a href="https://testmoz.com/10362752" target="blank">MCQ Exam</a></button>
-            <button class="btn"><a href="https://testmoz.com/10362774" target="blank">CQ Exam</a></button>
-        </div>
+   
+    <div class="table-container" style="min-height: 680px;">
+        <h1 class="heading">Exam Plan</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Chapter Name</th>
+                    <th>Topic/Syllabus</th>
+                    <th>CQ Test</th>
+                    <th>MCQ Test</th>
+                    <th>Solve Sheet</th>
+                    <th>Class</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Chapter Name">গুণগত রসায়ন(Qualititve Chemistry)</td>
+                    <td data-label="Topic/Syllabus">Dunno</td>
+                    <td data-label="CQ Test"><button class="btn"><a href="https://testmoz.com/10294852" target="blank">CQ Link</a></button></td>
+                    <td data-label="MCQ Test"> <button class="btn"><a href="https://testmoz.com/10294798" target="blank">MCQ Link</a></button></td>
+                    <td data-label="Solve Sheet"><button class="btn"><a href="https://drive.google.com/file/d/1Ic5mpigMwezOFeWVt8PmV1ODJnZ14lSo/view" target="blank">Solve Sheet Link</a></button></td>
+                    <td data-label="Class"><button class="btn"><a href="#" target="blank">Live Class link</a></button></td>
+                </tr>
+                <tr>
+                    <td data-label="Chapter Name">পরিবেশ রসায়ন(Environmental Chemistry)</td>
+                    <td data-label="Topic/Syllabus">Dunno</td>
+                    <td data-label="CQ Test"><button class="btn"><a href="https://testmoz.com/10339310" target="blank">CQ Link</a></button></td>
+                    <td data-label="MCQ Test"> <button class="btn"><a href="https://testmoz.com/10339342" target="blank">MCQ Link</a></button></td>
+                    <td data-label="Solve Sheet"><button class="btn"><a href="https://drive.google.com/file/d/1L6AXXGeyDZce6Crzpudge9OusQqwpRQB/view" target="blank">Solve Sheet Link</a></button></td>
+                    <td data-label="Class"><button class="btn"><a href="#" target="blank">Live Class link</a></button></td>
+                </tr>
+                <tr>
+                    <td data-label="Chapter Name">মৌলের পর্যায়বৃত্ত ধর্ম ও রাসায়নিক বন্ধন(Periodic properties of elements and chemical bonding)</td>
+                    <td data-label="Topic/Syllabus">Dunno</td>
+                    <td data-label="CQ Test"><button class="btn"><a href="https://testmoz.com/10362774" target="blank">CQ Link</a></button></td>
+                    <td data-label="MCQ Test"> <button class="btn"><a href="https://testmoz.com/10362752" target="blank">MCQ Link</a></button></td>
+                    <td data-label="Solve Sheet"><button class="btn"><a href="https://drive.google.com/file/d/1P-nb7-tewjxFTRrf47Rc9wjEKy58PLgK/view"  target="blank">Solve Sheet Link</a></button></td>
+                    <td data-label="Class"><button class="btn"><a href="#" target="blank">Live Class link</a></button></td>
+                </tr>
+                <tr>
+                    <td data-label="Chapter Name">রাসায়নিক পরিবর্তন(Chemical Changes)</td>
+                    <td data-label="Topic/Syllabus">Dunno</td>
+                    <td data-label="CQ Test"><button class="btn"><a href="https://testmoz.com/10411382" target="blank">CQ Link</a></button></td>
+                    <td data-label="MCQ Test"> <button class="btn"><a href="https://testmoz.com/10411514" target="blank">MCQ Link</a></button></td>
+                    <td data-label="Solve Sheet"><button class="btn"><a href="#"  target="blank">Solve Sheet Link</a></button></td>
+                    <td data-label="Class"><button class="btn"><a href="#" target="blank">Live Class link</a></button></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-    <!-- revision plan section -->
-    <section class="revision-main-app">
-        <div class="revision-card">
-            <h1>Next Exam</h1>
-            <p class="chapter-name">Chapter 1: পরিবেশ রসায়ন (Environmental Chemistry) <br>
-                <span>Chemistry 2nd Paper</span>
-            </p>
-
-            <h1 class="exam-title">Exam time</h1>
-            <p class="exam-time"> October 10th, 10:00:00 am
-                <br> to <br>
-                October 10th, 10:00:00 pm
-            </p>
-
-            <div class="revision-button-links">
-                <button class="btn"><a href="#">MCQ Live</a></button>
-                <button class="btn start-exam-modal"><a href="#">Start Exam</a></button>
-                <button class="btn"><a href="https://drive.google.com/file/d/1L6AXXGeyDZce6Crzpudge9OusQqwpRQB/view" target="blank">Solve Sheet</a></button>
-            </div>
-        </div>
-    </section>
-
-
     <!-- footer section  -->
     <footer class="footer">
         <div class="box-container">
@@ -91,7 +112,12 @@
 
         <div class="credit">created by <span>CHO ELITE TEAM</span>| all rights reserved</div>
     </footer>
+
+
+    <!-- script links -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/script.js"></script>
 
 </body>
+
+</html>

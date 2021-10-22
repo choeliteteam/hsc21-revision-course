@@ -41,6 +41,7 @@ section {
     padding-top: 2rem;
     text-align: center;
     font-size: 4rem;
+    margin-bottom: 4rem;
     /* text-transform: uppercase; */
 }
 
@@ -525,70 +526,45 @@ header #burger {
 }
 
 /* revision page  */
+.table-container{
+    padding: 0 10%;
+    margin: 40px auto 0;
+}
 
-.revision-main-app {
-    display: flex;
-    /* background-color: #666; */
-    justify-content: center;
-    align-items: center;
+.table{
     width: 100%;
-    margin-top: 130px;
-    margin-bottom: 130px;
+    border-collapse: collapse;
 }
-
-.revision-main-app .revision-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: rgba(236, 235, 235, 0.795);
-    box-shadow: rgba(0, 0, 0, .3);
-    width: 100%;
-    text-align: center;
-    padding: 2rem 0;
-    border-radius: 1rem;
-    /* height: 400px; */
-    line-height: 3rem;
-    text-transform: none;
+.table thead{
+    background: var(--gradient);
 }
-
-.revision-main-app .revision-card h1 {
-    color: #f39c12;
-    font-size: 5rem;
-    text-transform: none;
-}
-
-.revision-main-app .revision-card p {
-    /* font-size: 2rem; */
+.table thead tr th{
+    font-size: 2rem;
+    letter-spacing: 0.35px;
+    font-weight: 600;
     color: #222;
-    text-transform: none;
+    padding: .6rem;
+    vertical-align: top;
+    /* border:.1px solid #333; */
 }
-
-.revision-main-app .revision-card .chapter-name {
-    font-size: 2.5rem;
-    margin: 4rem;
-}
-
-.revision-main-app .revision-card .chapter-name span {
+.table tbody tr td{
     font-size: 1.75rem;
-    color: #555;
+    letter-spacing: 0.35px;
+    font-weight: medium;
+    padding: 1.5rem;
+    text-align: center;
+    /* border:.1px solid #333; */
 }
 
-.revision-main-app .revision-card .exam-title {
-    font-size: 3rem;
-    color: #f39c12;
+.table tbody tr:nth-child(even){
+    background-color: #eee;
 }
 
-.revision-main-app .revision-card .exam-time{
+.table tbody tr button a{
+    color: #fff;
     font-size: 1.5rem;
-    margin:1rem;
-    color: #222;
 }
 
-.revision-main-app .revision-card .revision-button-links a{
-    color:#fff;
-    padding-bottom: 2rem;
-}
 /* responsive queries */
 
 @media(max-width:991px) {
@@ -639,6 +615,45 @@ header #burger {
     }
     .contact form .input-box input {
         width: 100%;
+    }
+}
+@media (max-width:768px){
+    .table thead{
+        display: none;
+    }
+    /* .table tbody tr:nth-child(even){
+        background-color: #fff;
+    }
+     */
+    .table .table tbody, .table tr, .table td{
+        display: block;
+        width: 100%;
+    }
+
+    .table tr{
+        background: #eee;
+        margin-bottom: 15px;
+    }
+
+    .table tbody tr td{
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    .table tbody tr td{
+        border-bottom: #fff .3rem solid;
+    }
+
+    .table td::before{
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: 600;
+        font-size:1.75rem;
+        text-align: left;
     }
 }
 
