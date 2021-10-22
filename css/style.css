@@ -168,12 +168,13 @@ header #burger {
     margin-bottom: 1rem;
 }
 
-.modal-wrap .modal .btn{
+.modal-wrap .modal .btn {
     margin: 0 1rem;
-    margin-top:2rem; 
+    margin-top: 2rem;
     font-size: 1.7rem;
 }
-.modal-wrap .modal .fa-times{
+
+.modal-wrap .modal .fa-times {
     position: relative;
     top: 55%;
     right: -40%;
@@ -181,9 +182,11 @@ header #burger {
     color: #999;
     cursor: pointer;
 }
-.modal-wrap .modal .btn a{
+
+.modal-wrap .modal .btn a {
     color: #fff;
 }
+
 /* login form  */
 
 .login-form {
@@ -526,19 +529,22 @@ header #burger {
 }
 
 /* revision page  */
-.table-container{
+
+.table-container {
     padding: 0 10%;
     margin: 40px auto 0;
 }
 
-.table{
+.table {
     width: 100%;
     border-collapse: collapse;
 }
-.table thead{
+
+.table thead {
     background: var(--gradient);
 }
-.table thead tr th{
+
+.table thead tr th {
     font-size: 2rem;
     letter-spacing: 0.35px;
     font-weight: 600;
@@ -547,7 +553,8 @@ header #burger {
     vertical-align: top;
     /* border:.1px solid #333; */
 }
-.table tbody tr td{
+
+.table tbody tr td {
     font-size: 1.75rem;
     letter-spacing: 0.35px;
     font-weight: medium;
@@ -556,11 +563,11 @@ header #burger {
     /* border:.1px solid #333; */
 }
 
-.table tbody tr:nth-child(even){
+.table tbody tr:nth-child(even) {
     background-color: #eee;
 }
 
-.table tbody tr button a{
+.table tbody tr button a {
     color: #fff;
     font-size: 1.5rem;
 }
@@ -617,42 +624,39 @@ header #burger {
         width: 100%;
     }
 }
-@media (max-width:768px){
-    .table thead{
+
+@media (max-width:768px) {
+    .table thead {
         display: none;
     }
     /* .table tbody tr:nth-child(even){
         background-color: #fff;
     }
      */
-    .table .table tbody, .table tr, .table td{
+    .table .table tbody, .table tr, .table td {
         display: block;
         width: 100%;
     }
-
-    .table tr{
+    .table tr {
         background: #eee;
         margin-bottom: 15px;
     }
-
-    .table tbody tr td{
+    .table tbody tr td {
         text-align: right;
         padding-left: 50%;
         position: relative;
     }
-
-    .table tbody tr td{
+    .table tbody tr td {
         border-bottom: #fff .3rem solid;
     }
-
-    .table td::before{
+    .table td::before {
         content: attr(data-label);
         position: absolute;
         left: 0;
         width: 50%;
         padding-left: 15px;
         font-weight: 600;
-        font-size:1.75rem;
+        font-size: 1.75rem;
         text-align: left;
     }
 }
