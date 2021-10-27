@@ -625,7 +625,7 @@ header #burger {
     }
 }
 
-@media (max-width:768px) {
+@media (max-width:950px) {
     .table thead {
         display: none;
     }
